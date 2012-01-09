@@ -1,10 +1,13 @@
 NAME=apostila
+VERSION=1.0.1
+OUTPUT=${NAME}-v${VERSION}.pdf
 
-${NAME}.pdf: ${NAME}.tex ${NAME}.bib latex/*.tex figs/*.pdf
+${OUTPUT}: ${NAME}.tex ${NAME}.bib latex/*.tex figs/*.pdf
 	pdflatex ${NAME}
 	bibtex ${NAME}
 	pdflatex ${NAME}
 	pdflatex ${NAME}
+	mv ${NAME}.pdf ${OUTPUT}
 
 clean:
-	rm ${NAME}.log ${NAME}.toc ${NAME}.pdf ${NAME}.aux ${NAME}.out ${NAME}.blg ${NAME}.bbl 
+	rm ${OUTPUT} ${NAME}.log ${NAME}.toc ${NAME}.aux ${NAME}.out ${NAME}.blg ${NAME}.bbl 
