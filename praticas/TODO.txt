@@ -1,0 +1,20 @@
+Ideias para praticas:
+
+Linear
+
+* queda livre
+* ajuste poly regional
+* rede grav
+* mickey
+* perfil sonico (aster)
+* grav/mag linear
+* sinal climático
+
+Não-linear
+
+* bacia 2D triangular
+* bacia 2D retangular
+* epicentro
+* sismica refração
+* compacto
+* Mag corpos simples (blackely)
