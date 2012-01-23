@@ -15,6 +15,9 @@ Não-linear
 * bacia 2D triangular
 * bacia 2D retangular
 * epicentro
+    * eles fazem modelos homogeneos
+    * nos fazemos modelo heterogeneo e passamos vp e vs medios. mostra que o
+      resultado dá errado por causa da escolha de aproximação
 * sismica refração
 * compacto
 * Mag corpos simples (blackely)
