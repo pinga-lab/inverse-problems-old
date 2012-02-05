@@ -12,4 +12,22 @@ Perfilagem sísmica vertical
 
 2 - Modelar um perfil de velocidades que ajuste os dados medidos sem ruído.
 
-3, 4 e 5 - Modelar um perfil de velocidades que ajuste os dados medidos com ruído.
+3 - Modelar um perfil de velocidades simples que ajuste os dados medidos com ruído.
+
+4 - Modelar um perfil de velocidades mais complexo que ajuste os dados medidos com ruído.
+
+5 - Gerar um perfil de velocidades com ruído e passar para o amiguinho.
+
+6 - Modelar o perfil de velocidades do amiguinho
+
+7 - Modelar mais um perfil de velocidades mais complexo que ajuste os dados medidos com ruído.
+
+
+Determinação epicentral
+---------------------------
+
+1 - Simular um evento sismico que foi captado por receptores.
+
+2 - Modelar as coordenadas do epicentro que ajuste os dados medidos
+
+3 - Modelar as coordenadas do epicentro que ajuste os dados medidos com ruído
