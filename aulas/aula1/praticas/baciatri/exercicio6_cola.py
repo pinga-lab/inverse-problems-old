@@ -16,14 +16,15 @@ with open('exercicio6-modelo.pickle') as f:
     data = pickle.load(f)
     nodes_model = data['nodes']
 
-true = Polygon(nodes)
+true = [Polygon(n) for n in nodes]
 seu = Polygon(nodes_model)
     
 pyplot.figure(figsize=(14, 5))
-vis.map.polygon(true, 'o-r', linewidth=2, fill='r', alpha=0.3,
-                label='Seu')
-vis.map.polygon(seu, 'o--b', linewidth=2, label='Verdadeiro')
-pyplot.legend(loc='lower right', numpoints=1)
+vis.map.polygon(seu, 'o-r', linewidth=2, fill='r', alpha=0.3,
+            label='Seu')
+vis.map.polygon(true[0], 'o--b', linewidth=2, label='Verdadeiro')
+vis.map.polygon(true[1], 'o--b', linewidth=2)
+pyplot.legend(loc='lower left', numpoints=1)
 pyplot.xlabel("X")
 pyplot.ylabel("Z")
 vis.map.set_area((0, 100000, 5000, 0))

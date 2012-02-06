@@ -7,7 +7,7 @@ with open('exercicio6.pickle') as f:
     data = pickle.load(f)
     xp = data['xp']
     zp = data['zp']
-    nodes = data['nodes']
+    nodes = data['nodes'][0]
     gz = data['gz']
     density = data['density']
 

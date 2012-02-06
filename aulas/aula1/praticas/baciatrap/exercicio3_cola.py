@@ -20,9 +20,9 @@ true = Polygon(nodes)
 seu = Polygon(nodes_model)
     
 pyplot.figure(figsize=(14, 5))
-vis.map.polygon(true, 'o-r', linewidth=2, fill='r', alpha=0.3,
+vis.map.polygon(seu, 'o-r', linewidth=2, fill='r', alpha=0.3,
                 label='Seu')
-vis.map.polygon(seu, 'o--b', linewidth=2, label='Verdadeiro')
+vis.map.polygon(true, 'o--b', linewidth=2, label='Verdadeiro')
 pyplot.legend(loc='lower right', numpoints=1)
 pyplot.xlabel("X")
 pyplot.ylabel("Z")
