@@ -38,9 +38,9 @@ Bacia triangular
 
 1 - Gerar um perfil gravimetrico causado por uma bacia triangular
 
-2 - Modelar uma bacia que ajuste os dados medidos sem ruído.
+2 - Modelar uma bacia que ajuste os dados medidos sem ruido.
 
-3 - Modelar uma bacia que ajuste os dados medidos com ruído.
+3 - Modelar uma bacia que ajuste os dados medidos com ruido.
 
 4 - Gerar um dado gravimétrico com ruído e passar para o amiguinho.
 
@@ -49,14 +49,14 @@ Bacia triangular
 6 - Modelar mais uma bacia que ajuste os dados medidos com ruído.
 
 
-Bacia triangular
-----------------
+Bacia trapezoidal
+------------------
 
 1 - Gerar um perfil gravimetrico causado por uma bacia trapezoidal
 
-2 - Modelar uma bacia que ajuste os dados medidos sem ruído.
+2 - Modelar uma bacia que ajuste os dados medidos sem ruido.
 
-3 - Modelar uma bacia que ajuste os dados medidos com ruído.
+3 - Modelar uma bacia que ajuste os dados medidos com ruido.
 
 4 - Gerar um dado gravimétrico com ruído e passar para o amiguinho.
 
