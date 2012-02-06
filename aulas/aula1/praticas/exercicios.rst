@@ -24,10 +24,43 @@ Perfilagem sísmica vertical
 
 
 Determinação epicentral
----------------------------
+------------------------
 
 1 - Simular um evento sismico que foi captado por receptores.
 
 2 - Modelar as coordenadas do epicentro que ajuste os dados medidos
 
 3 - Modelar as coordenadas do epicentro que ajuste os dados medidos com ruído
+
+
+Bacia triangular
+----------------
+
+1 - Gerar um perfil gravimetrico causado por uma bacia triangular
+
+2 - Modelar uma bacia que ajuste os dados medidos sem ruído.
+
+3 - Modelar uma bacia que ajuste os dados medidos com ruído.
+
+4 - Gerar um dado gravimétrico com ruído e passar para o amiguinho.
+
+5 - Modelar a bacia do amiguinho
+
+6 - Modelar mais uma bacia que ajuste os dados medidos com ruído.
+
+
+Bacia triangular
+----------------
+
+1 - Gerar um perfil gravimetrico causado por uma bacia trapezoidal
+
+2 - Modelar uma bacia que ajuste os dados medidos sem ruído.
+
+3 - Modelar uma bacia que ajuste os dados medidos com ruído.
+
+4 - Gerar um dado gravimétrico com ruído e passar para o amiguinho.
+
+5 - Modelar a bacia do amiguinho
+
+6 - Modelar mais uma bacia que ajuste os dados medidos com ruído.
+
