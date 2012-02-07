@@ -1,0 +1,2 @@
+parte2:
+    GPR: tá escrito densidade onde era pra ser velocidade
