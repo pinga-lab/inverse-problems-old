@@ -12,10 +12,15 @@ with open('exercicio3-modelo.pickle') as f:
     estimate = pickle.load(f)
 
 area = (0, 100000, 0, 100000)
+shape = (100, 100)
+xs, ys = gridder.regular(area, shape)
+vp, vs = 2000, 1000
+goals = epicenter.mapgoal(xs, ys, ttr, recs, vp, vs)
                                
 pyplot.figure(figsize=(7,6))
 pyplot.title('Epicentro + estacoes')
 pyplot.axis('scaled')
+vis.map.contourf(xs, ys, goals, shape, 30)
 vis.map.points(recs, '^r', label="Estacaoes")
 vis.map.points(src, '*y', label="Verdadeiro")
 vis.map.points([estimate], '*g', label="Estimado")
