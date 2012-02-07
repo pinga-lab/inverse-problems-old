@@ -12,7 +12,7 @@ with open('exercicio3-modelo.pickle') as f:
     estimate = pickle.load(f)
 
 area = (0, 100000, 0, 100000)
-shape = (100, 100)
+shape = (50, 50)
 xs, ys = gridder.regular(area, shape)
 vp, vs = 2000, 1000
 goals = epicenter.mapgoal(xs, ys, ttr, recs, vp, vs)
