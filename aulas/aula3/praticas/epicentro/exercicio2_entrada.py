@@ -1,2 +1,2 @@
-norma_minima = 0.000000000000001
+norma_minima = 0.00000000
 dados = 'dados.pickle'

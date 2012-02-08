@@ -8,13 +8,21 @@ import cPickle as pickle
 
 params = __import__('exercicio3_entrada')
 equality = params.igualdade
-ref = params.referencia
 
 with open(params.dados) as f:
     recs, src, ttr, error = pickle.load(f)
     
 area = (0, 100000, 0, 100000)
 vp, vs = 2000, 1000
+
+pyplot.figure()
+ax = pyplot.subplot(1, 1, 1)
+pyplot.axis('scaled')
+pyplot.suptitle("Escolha o valor de referencia")
+vis.map.points(recs, '^r')
+vis.map.points(src, '*y')
+xref, yref = ui.picker.points(area, ax, marker='*', color='w')[0]
+ref = {'x':xref, 'y':yref}
 
 shape = (50, 50)
 xs, ys = gridder.regular(area, shape)
@@ -26,6 +34,7 @@ pyplot.axis('scaled')
 pyplot.suptitle("Escolha a estimativa inicial")
 vis.map.contourf(xs, ys, goals, shape, 30)
 vis.map.points(recs, '^r')
+vis.map.points([[xref, yref]], '*w', label="Referencia")
 vis.map.points(src, '*y')
 inicial = ui.picker.points(area, ax, marker='*', color='k')[0]
 
@@ -41,6 +50,7 @@ pyplot.axis('scaled')
 vis.map.contourf(xs, ys, goals, shape, 30)
 vis.map.points(recs, '^r', label="Estacaoes")
 vis.map.points(src, '*y', label="Verdadeiro")
+vis.map.points([[xref, yref]], '*w', label="Referencia")
 vis.map.points([inicial], '*k', label="Inicial")
 vis.map.points([estimate], '*g', label="Estimado")
 vis.map.set_area(area)
