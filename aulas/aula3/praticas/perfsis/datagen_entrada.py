@@ -1,2 +1,2 @@
-ruido = 0.0
+ruido = 0.01
 arquivo = 'dados.pickle'

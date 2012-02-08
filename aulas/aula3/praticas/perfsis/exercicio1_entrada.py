@@ -1,2 +1,2 @@
-camadas = 5
+camadas = 50
 dados = 'dados.pickle'
