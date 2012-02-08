@@ -1,1 +1,1 @@
-ruido = 0.0
+ruido = 0.1
