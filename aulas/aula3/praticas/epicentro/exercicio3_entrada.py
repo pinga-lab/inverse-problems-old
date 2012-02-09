@@ -1,2 +1,2 @@
-igualdade = 0.00000000
+igualdade = 0.1
 dados = 'dados.pickle'
