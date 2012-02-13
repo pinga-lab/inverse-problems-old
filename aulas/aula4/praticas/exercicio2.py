@@ -38,7 +38,7 @@ for e, r in iterator:
     newton.append(e)
 newton_predicted = ttr - r
 
-sdsolver = inversion.gradient.steepest(initial)
+sdsolver = inversion.gradient.steepest(initial, armijo=True)
 steepest = [initial]
 iterator = epicenter.flat_earth(ttr, recs, vp, vs, sdsolver, iterate=True)
 for e, r in iterator:
