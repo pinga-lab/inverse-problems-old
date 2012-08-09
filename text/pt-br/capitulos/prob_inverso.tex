@@ -143,7 +143,7 @@ de\-ter\-mi\-na\-do vetor de parâmetros $\vect{p}$.}
 \end{quote}
 
 \indent Perante este conceito, o problema inverso consiste em determinar um
-vetor $\opt{p}$ que minimiza a função do ajuste $\phi(\vect{p})$. 
+vetor $\opt{p}$ que minimiza a função do ajuste $\phi(\vect{p})$.
 Matematicamente, isso equivale a encontrar o vetor $\opt{p}$ tal que o gradiente
 da função $\phi(\vect{p})$ avaliado em $\opt{p}$ seja igual ao vetor nulo.
 Este vetor $\opt{p}$ é um {\it ponto extremo} da função
@@ -161,7 +161,7 @@ $\phi(\vect{p})$.
         \dfrac{\partial \phi(\vect{p})}{\partial p_M}
     \end{bmatrix} ,
 \label{eq:gradphi_partial}
-\end{equation} 
+\end{equation}
 
 \noindent em que $\vect{\nabla}$ é o operador gradiente (Apêndice \ref{chap:opmat}).
 A partir da equação \ref{eq:ajuste}, a expressão para o $i$-ésimo elemento do
@@ -174,14 +174,14 @@ vetor gradiente é
         \left[\vect{d}^{\thinspace o} - \vect{f}(\vect{p})\right]^T
         \left[\vect{d}^{\thinspace o} - \vect{f}(\vect{p})\right]
     \right\} \\[0.5cm]
-    &= 
+    &=
     \underbrace{
     \left\{-\dfrac{\partial\vect{f}(\vect{p})}{\partial p_i}^T
             \left[\vect{d}^{\thinspace o} - \vect{f}(\vect{p})\right]
     \right\}}_{\text{escalar}}
     +
     \underbrace{
-    \left\{-\left[\vect{d}^{\thinspace o} - \vect{f}(\vect{p})\right]^T            
+    \left\{-\left[\vect{d}^{\thinspace o} - \vect{f}(\vect{p})\right]^T
             \dfrac{\partial\vect{f}(\vect{p})}{\partial p_i}
     \right\}}_{\text{escalar}}
 \end{split} .
@@ -193,7 +193,7 @@ tomar o transposto do segundo termo do lado direito da equação
 \ref{eq:del_phi_del_pi}, obtendo
 
 \begin{equation}
-\dfrac{\partial \phi(\vect{p})}{\partial p_i} = 
+\dfrac{\partial \phi(\vect{p})}{\partial p_i} =
     -2\dfrac{\partial\vect{f}(\vect{p})}{\partial p_i}^T
     \left[\vect{d}^{\thinspace o} - \vect{f}(\vect{p})\right],
 \label{eq:del_phi_del_pi_simple}
@@ -252,10 +252,10 @@ escrito como
 \label{eq:gradphi}
 \end{equation}
 
-\noindent em que 
+\noindent em que
 
 \begin{equation}
-\mat{G}(\vect{p}) = 
+\mat{G}(\vect{p}) =
 \begin{bmatrix}
     \dfrac{\partial\vect{f}(\vect{p})}{\partial p_1} &
     \dfrac{\partial\vect{f}(\vect{p})}{\partial p_2} &
@@ -271,15 +271,15 @@ escrito como
     \vspace{0.3cm}\\
     \dfrac{\partial f_2(\vect{p})}{\partial p_1} &
         \dfrac{\partial f_2(\vect{p})}{\partial p_2} &
-        \ldots & 
+        \ldots &
         \dfrac{\partial f_2(\vect{p})}{\partial p_M}
     \\
     \vdots & \vdots & \ddots & \vdots
     \\
     \dfrac{\partial f_N(\vect{p})}{\partial p_1} &
         \dfrac{\partial f_N(\vect{p})}{\partial p_2} &
-        \ldots & 
-        \dfrac{\partial f_N(\vect{p})}{\partial p_M}        
+        \ldots &
+        \dfrac{\partial f_N(\vect{p})}{\partial p_M}
 \end{bmatrix}.
 \label{eq:jacobian}
 \end{equation}
@@ -305,5 +305,3 @@ não-linear em relação aos parâmetros.
 Essa análise nos permitirá compreender a influência da função $f$ na busca pelo
 vetor de parâmetros $\opt{p}$ que minimiza a função $\phi(\vect{p})$.
 
-\input{latex/prob_inverso_linear.tex}
-\input{latex/prob_inverso_naolinear.tex}

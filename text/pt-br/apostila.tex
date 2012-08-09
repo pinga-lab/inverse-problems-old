@@ -46,7 +46,7 @@
 \cfoot{}
 \addtolength{\headheight}{15.5pt} % space for the rule
 \fancypagestyle{plain}{
-    \fancyfoot{} 
+    \fancyfoot{}
     \renewcommand{\headrulewidth}{0pt} % and the line
     \rhead{\bfseries\thepage}
     \lhead{}
@@ -55,7 +55,7 @@
 % Information
 \title{\bf TÓPICOS DE \\[0.8cm] INVERSÃO EM GEOFÍSICA \vspace{1cm}}
 \author{Vanderlei Coelho de Oliveira Junior\\[0.3cm]Leonardo Uieda}
-\date{\vfill Versão 1.0.1\\[0.5cm] 2011}
+\date{\vfill Versão 1.1\\[0.5cm] 2011}
 
 % For pdf hyperlinks
 \usepackage[pdftex]{hyperref}
@@ -69,18 +69,25 @@
 \begin{document}
     \maketitle
     \newpage
-    \input{latex/copyright.tex}
+    \input{capitulos/copyright.tex}
     \pagenumbering{roman}
     \doublespacing
-    %\input{latex/prefacio.tex}
+    %\input{capitulos/prefacio.tex}
     \tableofcontents
     \newpage
     \pagenumbering{arabic}
-    \input{latex/introducao.tex}
-    \input{latex/prob_inverso.tex}
-    \input{latex/regularizacao.tex}
-    \input{latex/procedimentos_praticos.tex}
-    \input{latex/leitura.tex}
+    \input{capitulos/introducao.tex}
+    \input{capitulos/prob_inverso.tex}
+        \input{capitulos/prob_inverso_linear.tex}
+        \input{capitulos/prob_inverso_naolinear.tex}
+    \input{capitulos/regularizacao.tex}
+        \input{capitulos/norma_minima.tex}
+        \input{capitulos/vinculo_igualdade.tex}
+        \input{capitulos/suavidade.tex}
+        \input{capitulos/variacao_total.tex}
+        %\input{capitulos/compacidade.tex}
+    \input{capitulos/procedimentos_praticos.tex}
+    \input{capitulos/leitura.tex}
     \onehalfspacing
     %\bibliographystyle{plainnat}
     %\bibliographystyle{amsplain}
@@ -92,6 +99,6 @@
     \addcontentsline{toc}{chapter}{Referências Bibliográficas}
     \bibliography{apostila}
     \appendix
-    \input{latex/apendice.tex}
+    \input{capitulos/apendice.tex}
 \end{document}
 

@@ -1,8 +1,8 @@
 NAME=apostila
 VERSION=1.0.1
-OUTPUT=${NAME}-v${VERSION}.pdf
+OUTPUT=topicos-de-inversao-em-geofisia-v${VERSION}.pdf
 
-${OUTPUT}: ${NAME}.tex ${NAME}.bib latex/*.tex figs/*.pdf
+${OUTPUT}: ${NAME}.tex ${NAME}.bib capitulos/*.tex figs/*.pdf
 	pdflatex ${NAME}
 	bibtex ${NAME}
 	pdflatex ${NAME}
@@ -10,4 +10,5 @@ ${OUTPUT}: ${NAME}.tex ${NAME}.bib latex/*.tex figs/*.pdf
 	mv ${NAME}.pdf ${OUTPUT}
 
 clean:
-	rm ${OUTPUT} ${NAME}.log ${NAME}.toc ${NAME}.aux ${NAME}.out ${NAME}.blg ${NAME}.bbl 
+	rm -f ${OUTPUT} ${NAME}.log ${NAME}.toc ${NAME}.aux ${NAME}.out \
+	${NAME}.blg ${NAME}.bbl
